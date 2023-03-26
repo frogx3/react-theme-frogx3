@@ -1,0 +1,30 @@
+@use "../../styles/mixins" as *;
+
+.component {
+	color: var(--wpe--main--color);
+	background-color: #f2f2f2;
+	padding-top: 1rem;
+
+	&.home {
+		display: flex;
+		justify-content: center;
+		> div {
+			max-width: 1000px;
+			width: 100%;
+			display: grid;
+			grid-template-columns: 1fr;
+
+			@include for-desktop {
+				grid-template-columns: 300px auto;
+				gap: 20px;
+			}
+		}
+
+		// > div {
+		// 	display: grid;
+		// 	grid-template-columns: repeat(1, 1fr);
+		// 	gap: 20px;
+		// }
+	}
+
+}

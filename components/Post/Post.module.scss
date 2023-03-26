@@ -1,0 +1,39 @@
+.component {
+  padding: 1rem;
+  margin-bottom: 4rem;
+  background-color: #fff;
+  border-radius: 10px;
+
+
+  .title {
+    margin-bottom: 0.5rem;
+  }
+
+  .postInfo {
+    margin-bottom: 1.5rem;
+  }
+
+  .postTitle {
+    text-decoration: none;
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  .featuredImage {
+    margin: 0;
+    margin-bottom: 2rem;
+
+    > span {
+      width: 100% !important;
+    }
+
+    img {
+      border-radius: 20px;
+      object-fit: cover;
+      height: 250px !important;
+      min-height: inherit !important;
+    }
+  }
+
+}
